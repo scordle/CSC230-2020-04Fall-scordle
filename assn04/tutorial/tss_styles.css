@@ -13,67 +13,54 @@
 
 */
 
-
-
 /* HTML and Body Styles */
 
 html {
-   background-color: hsl(27, 72%, 72%);
+  background-color: hsl(27, 72%, 72%);
 }
 
 body {
-   color: rgb(91, 91, 91);
-   background-color: ivory;
+  color: rgb(91, 91, 91);
+  background-color: ivory;
 }
 
 /* Heading Styles */
 
 h1 {
-   color: white;
-   background-color: rgb(222, 128, 60);
+  color: white;
+  background-color: rgb(222, 128, 60);
 }
 
 h2 {
+  color: white;
+  background-color: rgb(235, 177, 131);
+}
+
+article#about_tss h1 {
+   color: white;
+   background-color: rgb (222, 128, 60);
+}
+
+article#about_tss h2 {
    color: white;
    background-color: rgb(235, 177, 131);
 }
 
-
-
+article.syllabus h1, article.syllabus h2 {
+   color: rgb(101, 101, 101);
+   background-color: rgb(255, 185, 255);
+}
 
 /* Aside and Blockquote Styles */
+aside blockquote {
+   color: rgb(232, 165, 116);
+}
 
-
-
-
-
-/* Navigation Styles */	
-
-
-
-
+/* Navigation Styles */
 
 /* List Styles */
 
-
-
-
-
 /* Footer Styles */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 Notice for the Quicksand-Regular Font
