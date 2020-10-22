@@ -35,16 +35,19 @@ body {
 
 h1, h2 {
    font-family: Quicksand, Verdan, Geneva, sans-serif;
+   letter-spacing: 0.1em;
 }
 
 h1 {
   color: white;
   background-color: rgb(222, 128, 60);
+  font-size: 2.2em;
 }
 
 h2 {
   color: white;
   background-color: rgb(235, 177, 131);
+  font-size: 1.5em;
 }
 
 article#about_tss h1 {
@@ -63,11 +66,22 @@ article.syllabus h1, article.syllabus h2 {
 }
 
 /* Aside and Blockquote Styles */
+aside {
+   font-size: 0.8em;
+}
+
 aside blockquote {
    color: rgb(232, 165, 116);
 }
 
 /* Navigation Styles */
+nav {
+   font-size: 0.8em;
+}
+
+nav > ul {
+   line-height: 2em;
+}
 
 /* List Styles */
 
