@@ -1,0 +1,145 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 6
+   Case Problem 4
+
+   Hamilton Conference Center Style Sheet
+   Author: Yancy Inwe
+   Date:   2018-03-01
+
+   Filename:         hcc_styles.css
+   Supporting files: 
+
+*/
+
+
+/* Display styles */
+nav, header, section, article, aside, footer {
+   display: block;
+}
+
+/* Default Styles */
+
+body, body * {
+   font-size: inherit;
+   margin: 0px;
+   padding: 0px;
+   line-height: 1.4em;
+   text-decoration: none;
+}
+
+
+h1, h2, h3 {
+   font-weight: normal;
+   letter-spacing: 0.3em;
+}
+
+
+/* Body Styles */
+
+body {
+   font-family: Verdana, Geneva, sans-serif;
+   width: 95%;
+   min-width: 1000px;
+   max-width: 1200px;
+   margin: 0px auto;
+}
+
+
+/* Navigation Styles */
+
+nav {
+   width: 95%; 
+   color: white; 
+   background-color: rgb(86, 206, 184);
+   font-size: 0.8em; 
+   margin-bottom: 10px; 
+   height: 20px;
+}
+
+nav ul li {
+   display: inline;
+}
+
+nav ul li a {
+   display: block; 
+   float: left; 
+   color: white; 
+   margin: 0px 10px;
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+   color: black;
+}
+
+
+/* Section Styles */
+
+section.left {
+   width: 55%;
+   float: left;
+   margin-left: 1%;
+   margin-top: 20px;
+
+   -moz-column-count: 2;
+   -webkit-column-count: 2;
+   column-count: 2;
+
+   -moz-column-gap: 30px;
+   -webkit-column-gap: 30px;
+   column-gap: 30px;
+}
+
+section.right {
+   width: 35%;
+   float: left;
+   margin-left: 1%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+   border: 3px solid rgb(86, 206, 184);
+
+   -moz-border-radius: 30px;
+   -webkit-border-radius: 30px;
+   border-radius: 30px;
+}
+
+section p {
+   margin: 0px 0px 20px 0px;
+}
+
+
+dl {
+   font-size: 0.8em; 
+   width: 25em; 
+   padding: 10px;
+   width: 45%;
+}
+
+dd {
+   margin-top: -1.4em; 
+   margin-left: 15em;
+   width: 100%;
+}
+
+
+footer {
+   clear: left;
+}
+
+
+footer address {
+   font-size: 0.7em; 
+   text-align: center; 
+   font-style: normal;
+   font-variant: small-caps; 
+   width: 95%;
+   color: white; 
+   background-color: rgb(86, 206, 184);
+}
+
+
+
+
+

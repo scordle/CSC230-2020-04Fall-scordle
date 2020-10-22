@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 4
+   Case Problem 4
+   
+   Browyer Realty Design Styles
+   Author: Linda Browyer
+   Date:   2017-03-01
+	
+   Filename: br_styles.css
+
+*/
+
+/* HTML and Body Styles */
+
+html {
+   background-color: rgb(154, 154, 252);
+   font-size: 12px;
+   font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+   margin: 0px auto;
+   width: 90%;
+   max-width: 1100px;
+   min-width: 720px;
+   box-shadow: 10px 0px 25px rgb(51, 51, 51),
+               -10px 0px 25px rgb(51, 51, 51);
+}
+
+body > header {
+	background: linear-gradient(to bottom, rgb(191, 191, 191), rgb(51, 51, 51));
+}
+
+body > header > img {
+	-webkit-filter: drop-shadow(3px 3px 10px white);
+	filter: drop-shadow(3px 3px 10px white);
+}
+
+
+/* Body Header Navigation Styles */
+
+nav.horizontal {
+	margin: 0px auto;
+	width: 95%;
+}
+
+nav.horizontal::after {
+   content: "";
+   display: table;
+   clear: both;	
+}
+
+body > header > nav.horizontal li {
+	border: 8px ridge rgb(101, 101, 101);
+	display: block;
+	float: left;
+	width: 20%;
+}
+
+body > header > nav.horizontal li a {
+	display: block;
+	color: rgb(51, 51, 51);
+	font-size: 1.8em;
+	line-height: 3em;
+	height: 3em;
+	text-align: center;
+	width: 100%;
+	text-shadow: 1px 1px 0px white;
+	background: radial-gradient(rgb(211, 211, 255), rgb(151, 151, 151));
+}
+
+/* Main Styles */
+
+main {
+   background: url(br_paper.png);	
+   box-shadow: inset 10px 10px 25px rgb(51, 51, 51),
+               inset -10px -10px 25px rgb(51, 51, 51);
+	clear: both;
+	display: block;
+}
+
+/* Article Styles */
+
+article header {
+	background: rgb(71, 71, 71);
+	clear: both;
+	height: 5em;
+}
+
+article header::after {
+   content: "";
+   display: table;
+   clear: both;		
+}
+
+article header h1 {
+	color: white;
+	font-size: 2.5em;
+	font-weight: normal;
+	line-height: 2.5em;
+	text-indent: 20px;
+}
+
+article header address {
+	color: white;
+	display: block;
+	float: right;
+	font-style: normal;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	text-align: right;
+	margin-right: 30px;
+	width: 40%;
+}
+
+article > p:first-of-type {
+	margin-top: 1.5em;
+}
+
+article > p {
+	font-size: 1.5em;
+	line-height: 1.5em;
+	margin: 0 0 2em 30px;
+}
+
+figure#mainphoto {
+	background: linear-gradient(to bottom, rgb(101, 101, 255), rgb(51, 51, 51));	
+	clear: both;
+	float: right;
+	width: 40%;
+	margin: 20px 30px 20px 20px;
+}
+
+figure#mainphoto img {
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+}
+
+figure#mainphoto figcaption {
+	display: block;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+/* Unordered List Styles */
+
+main > article > ul {
+	font-size: 1.5em;
+	line-height: 2em;
+	list-style-type: circle;
+	margin-left: 70px;
+	margin-bottom: 20px;
+}
+
+
+/* Photolist Styles */
+
+section#photolist {
+	margin-top: 20px;
+	margin-left: 30px;
+	position: relative;
+	width: 100%;
+}
+
+section#photolist::after {
+   content: "";
+   display: table;
+   clear: both;		
+}
+
+
+section#photolist figure {
+	width: 20%;
+	z-index: 1;
+	float: left;
+	margin-right: 3.5%;
+	margin-bottom: 20px;
+	border: 15px double rgb(111, 111, 111);
+	border-radius: 30px;
+	background: radial-gradient(white 25%, rgb(101, 101, 101));
+	box-shadow: 10px 10px 25px rgb(51, 51, 51);
+}
+
+section#photolist figure:nth-of-type(odd) {
+	transform: rotate(10deg);
+}
+
+section#photolist figure:nth-of-type(even) {
+	transform: rotate(-10deg);
+}
+
+figure#fig4 img, figure#fig8 img, figure#fig9 img {
+	-webkit-filter: brightness(2.5);
+	filter: brightness(2.5);
+}
+
+figure#fig5 {
+	margin-right: 0px;
+}
+
+figure#fig9 {
+	margin-right: 0px;
+}
+
+section#photolist figure img {
+	display: block;
+	width: 75%;
+	border-radius: 25px;
+	margin: 10px auto;
+}
+
+section#photolist figure figcaption {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	text-align: center;
+	margin: 10px 0px;
+}
+
+
+/* Bottom Link Styles */
+
+nav#bottomlinks {
+	clear: both;
+	margin-top: 30px;
+	width: 75%;
+	background-color: rgb(51, 51, 51);
+}
+
+nav#bottomlinks li {
+	display: block;
+	float: left;
+	width: 25%;
+}
+
+nav#bottomlinks li a {
+	color: white;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 4em;
+	height: 4em;
+}
+
+/* Footer Styles */
+
+footer {
+	background-color: rgb(23, 23, 191);
+	clear: left;
+	text-align: right;
+}
+
+footer, footer span  a {
+   padding: 10px;
+   color: rgb(191, 191, 191);
+}
+
+footer span a:hover {
+   color: rgb(0, 167, 167);
+   text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+

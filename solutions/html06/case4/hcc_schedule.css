@@ -1,0 +1,60 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 6
+   Case Problem 4
+
+   Schedule Table Style Sheet
+   Author: Yancy Inwe
+   Date:   2018-03-01
+
+   Filename:         hcc_schedule.css
+   Supporting Files: 
+
+*/
+
+#sTable {
+   width: 95%; 
+   font-size: 0.7em; 
+   border-collapse: collapse;
+}
+
+#sTable caption {
+   caption-side: top; 
+   text-align: right;
+}
+
+
+#sTable td, #sTable th {
+   border: 1px solid gray; 
+   vertical-align: top;
+}
+
+#sTable col.firstColumn {
+   width: 8%; 
+   background-color: ivory;
+}
+
+#sTable col.timeColumns {
+   width: 5%;
+}
+
+
+#sTable thead {
+   border: 2px solid rgb(46,166,144); 
+   color: white;
+   background-color: rgb(86, 206, 184);
+}
+
+#sTable th {
+   text-align: left; 
+   font-weight: normal;
+}
+
+#sTable thead th {
+   text-align: center;
+}
+
+
+
+      
+

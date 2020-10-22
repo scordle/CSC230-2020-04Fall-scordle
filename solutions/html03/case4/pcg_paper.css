@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Kevin Webber
+   Date:   2017-03-01
+
+   Filename:         pcg_paper.css
+   Supporting Files: 
+
+*/
+
+/* Display styles */
+nav, header, section, article, aside, footer {
+   display: block;
+}
+
+/* Default Styles */
+
+html {
+   background-color: tan;
+}
+
+body {
+   position: relative;
+   background-color: white;
+   font-size: inherit;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+}
+
+h1, h2, h3 {
+   font-weight: normal;
+   letter-spacing: 0.3em;
+	margin-left: 1em;
+}
+
+h2 {
+   font-size: 1.1em;
+}
+
+
+/* Body Styles */
+
+body {
+   font-family: Verdana, Geneva, sans-serif;
+   width: 95%;
+   min-width: 640px;
+   max-width: 960px;
+   margin: 0px auto;
+   padding-bottom: 80px;
+}
+
+body::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+
+/* Header Styles */
+
+header img {
+   display: block;
+   width: 100%;
+}
+
+
+header address {
+   background-color: rgb(51, 51, 51);
+   color: white;
+   text-align: center;
+   font-style: normal;
+   font-size: 0.7em;
+}
+
+
+/* Navigation List Styles */
+
+nav.vertical {
+   float: left;
+   width: 15%;
+}
+
+nav.vertical ul {
+   padding-left: 10px;
+}
+
+nav.vertical li {
+   display: block;
+   height: 30px;
+   margin: 0px 0px 5px 0px;
+   padding: 0px;
+}
+
+nav.vertical li.newgroup {
+   margin-top: 20px;
+}
+
+
+
+nav.vertical li a {
+   color: black;
+   display: block;
+   font-size: 0.9em;
+   text-indent: 10px;
+   text-decoration: none;
+   width: 100%;
+}
+
+nav.vertical li a:hover {
+   background-color: white;
+   outline: 1px solid rgb(58, 53, 37);
+}
+
+
+
+/* Section Styles */
+
+section {
+   float: left;
+   width: 40.5%;
+   margin-left: 2%;
+}
+
+section p {
+   margin: 15px;
+}
+
+
+
+/* Left Section  Styles */
+
+section:first-of-type article:first-of-type > h1 {
+   font-size: 2em;
+}
+
+section:first-of-type article:first-of-type img {
+   float: right;
+   width: 25%;
+   margin: 0px 0px 10px 10px;
+}
+
+section:first-of-type article:first-of-type p:first-of-type:first-line {
+   font-variant: small-caps;
+   font-size: 1.2em;
+}
+
+section:first-of-type article:last-of-type > h1 {
+   font-size: 1.3em;
+}
+
+section:first-of-type article:last-of-type p:first-of-type:first-line {
+   text-transform: uppercase;
+}
+
+
+
+/* Right Section  Styles */
+
+section:last-of-type article:first-of-type > h1 {
+   background-color: rgb(239, 231, 192); 
+   height: 75px;
+   font-size: 1.3em;
+}
+
+section:last-of-type article:last-of-type p:first-of-type:first-line {
+   text-transform: uppercase;
+}
+
+/* Aside Styles */
+
+aside {
+   background-color: rgb(175, 145, 93);
+
+   margin-top: 20px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+   padding-bottom: 10px;
+}
+
+aside h1 {
+   background-color: rgb(51, 51, 51);
+   color: white;
+   font-size: 1em;
+   text-align: center;
+}
+
+aside ul {
+   margin: 30px;
+   list-style: disc;
+   padding-left: 5px;
+}
+
+aside ul li {
+   font-size: 0.75em;
+   margin: 10px 0px;
+}
+
+
+
+
+/* Links to Inside Articles */
+
+nav#links2 {
+   height: 200px; 
+   position: relative;
+}
+
+nav#links2 div {
+   width: 50%;
+}
+
+nav#links2 div:first-of-type {
+   position: absolute;
+   top: 40px;
+   left: 0px;
+}
+
+nav#links2 div:last-of-type {
+   position: absolute;
+   top: 40px;
+   left: 50%;
+}
+
+nav#links2 h1 {
+   font-size: 1.3em;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+nav#links2 ul {
+   list-style: square;
+   margin-left: 30px;
+}
+
+nav#links2 a {
+   font-size: 0.7em;
+   color: black;
+}
+
+nav#links2 a:hover {
+   color: blue;
+}
+
+
+   

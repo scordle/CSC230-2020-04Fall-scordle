@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Case Problem 4
+   
+   Author:   Tony Gallo
+   Date:     2017-03-01   
+   
+   Filename: jb_styles.css
+
+   This file contains the screen styles used with the 
+   Jersey Buoys home page
+
+*/
+
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(jb_back1.png) center / cover fixed;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   background: rgb(236, 236, 236);
+   max-width: 1200px;
+   margin: 0px auto;
+   box-shadow: rgb(51, 51, 51) 10px 10px 25px,  rgb(51, 51, 51) -10px 10px 25px;
+   display: flex;
+   flex-flow: row wrap;
+}
+
+body > header {
+   background: url(jb_back3.png) center / cover no-repeat;
+   width: 100%;
+}
+
+img#logoImage {
+   display: block;
+   left: left;
+   width: 40%;
+   max-width: 300px;
+   border-radius: 20px;
+   border: 5px solid rgba(84,183,213,1.00);
+   margin: 20px auto;
+   box-shadow: rgb(51, 51, 51) 10px 10px 20px;
+}
+
+/* Navicon Styles */
+
+a#navicon {
+   float: right;
+}
+
+a#navicon:hover+ul, nav.horizontal ul:hover {
+   display: block;
+}
+
+/* Top Navigation Styles */
+
+nav#top {
+   background-color: rgb(27, 117, 188);
+   width: 100%;
+   box-shadow: rgb(51, 51, 51) 0px -10px 20px;
+}
+
+nav#top::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+nav#top ul {
+   display: none;
+   width: 100%;
+   padding-bottom: 10px;
+}
+
+nav#top ul li {
+   background-color: rgb(27, 117, 188);
+   line-height: 2em;
+   font-size: 1.5em;
+   width: 100%;
+}
+
+nav#top ul li a {
+   color: white;
+   display: block;
+   width: 100%;
+   margin-left: 20px;
+}
+
+/* Flex Sizes and Order */
+aside#left {
+   flex: 1 5 200px;
+   order: 50;
+}
+
+article {
+   flex: 5 1 281px;
+}
+
+aside#right {
+   flex: 2 2 200px;
+}
+
+nav#bottom {
+   order: 75;
+}
+
+body > footer {
+   order: 100;
+}
+
+/* Left Aside Styles */
+
+aside#left {
+   background-color: rgb(186, 215, 236);
+}
+
+aside#left h1 {
+   text-align: center;
+   font-size: 2em;
+   letter-spacing: 0.1em;
+   line-height: 1.4em;
+   margin: 10px auto;
+}
+
+aside#left p {
+   text-align: center;
+   font-size: 1.2em;
+   line-height: 1.4em;
+   margin: 10px auto;
+}
+
+/* Right Aside Styles */
+
+aside#right {
+   background-color: rgb(108, 169, 69);
+}
+
+aside#right h1 {
+   font-size: 2em;
+   margin: 10px 0px;
+   text-align: center;
+   letter-spacing: 0.2em;
+   line-height: 1.4em;
+}
+
+dl {
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+dt, dd {
+   width: 70%;
+   margin: 5px;
+   text-align: center;
+}
+
+dt {
+   border-top: 1px solid black;
+   font-weight: bold;
+   padding-top: 5px;
+}
+
+/* Article Styles */
+
+article img {
+   display: block;
+   width: 100%;
+}
+
+article p {
+   margin: 20px;
+}
+
+/* Bottom Navigation Styles */
+
+nav#bottom {
+   background-color: rgb(27, 117, 188);
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   padding-bottom: 10px;
+}
+
+nav#bottom h1 {
+   font-size: 1.5em;
+   margin: 15px 0px;
+}
+
+nav#bottom ul {
+   width: 30%;
+   max-width: 200px;
+}
+
+nav#bottom ul li {
+   font-size: 1.2em;
+   line-height: 1.8em;
+}
+
+nav#bottom ul li a {
+   color: white;
+}
+
+/* Footer Styles */
+
+body > footer {
+   width: 100%;
+   text-align: center;
+   background-color: rgb(51, 51, 51);
+   color: white;
+   padding: 10px 0px;
+}
+
+@media only screen and (max-width: 480px) {
+
+   aside#right {
+      display: none;
+   }
+   
+   article p {
+      font-size: 1.2em;
+      line-height: 1.4em;
+   }
+   
+   /* Telephone and Email Styles */
+      
+   aside#left p a {
+      display: block;
+      width: 220px;
+      margin: 0px auto;
+      background-color: rgb(27, 117, 188);
+      border-radius: 20px;
+      color: white;
+      padding: 10px;
+      font-size: 1.2em;
+      text-decoration: none;
+   }
+}
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+   /* Navion Style */
+   
+   a#navicon {
+      display: none;
+   }
+   
+   nav#top ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      position: relative;
+   }
+   
+   nav#top ul li {
+      width: 100px;
+   }
+   
+   article p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+   }
+}
+
+@media only screen and (min-width: 681px) {
+    aside#left {
+       order: initial;
+   }
+}

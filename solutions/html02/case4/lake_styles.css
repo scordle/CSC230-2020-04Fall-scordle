@@ -1,0 +1,184 @@
+﻿@charset "utf-8";
+
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
+}
+
+@font-face {
+	font-family: Dobkin;
+	src: url(DobkinPlain.woff) format('woff'),
+	     url(DobkinPlain.ttf) format('ttf');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Ron Nelson
+   Date:   2017-03-01
+   
+   Filename: lake_styles.css
+
+*/
+
+
+/* General Styles */
+
+html {
+	background-color: hsl(60,39%,67%);
+}
+
+body {
+	background-color: hsl(302,74%,86%);
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+h1, h2 {
+	font-weight: normal;
+}
+
+/* Header Navigation */
+
+body > header > nav {
+	background-color: hsl(301,24%,38%); 
+}
+
+body > header > nav > ul > li {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+body > header a:visited, body > header a:link {
+	color: hsla(0, 0%, 100%, 0.5);
+}
+
+body > header a:hover, body > header a:active {
+	color: hsl(64,73%,68%);
+}
+
+
+/* Left Column Styles */
+
+section#leftcol {
+	background-color: ivory;
+}
+
+section#leftcol > h1 {
+	font-family: Champagne, cursive;
+	font-size: 4em;
+	margin: 10px 0px 10px 10px;
+	padding: 0;
+}
+
+section#leftcol > p {
+	margin: 20px 20px 20px 20px;
+}
+
+/* Right Column Styles */
+
+section#rightcol h2 {
+	font-family: Champagne, cursive;
+	font-size: 2em;
+	margin-bottom: 5px;
+}
+
+section#rightcol ul {
+	padding-left: 20px;
+	list-style-type: none;
+	font-size: 0.9em;
+}
+
+section#rightcol nav a:visited, section#rightcol nav a:link {
+	color: hsl(290,2%,50%);
+}
+
+section#rightcol nav a:hover, section#rightcol nav a:active {
+	color: hsl(290,2%,10%);
+	text-decoration: underline;
+}
+
+
+/* Aside Styles */
+
+aside:first-of-type {
+	background-color: hsl(15,60%,72%);
+}
+
+aside:last-of-type {
+	background-color: hsl(46,51%,63%);
+}
+
+aside h1 {
+	text-align: center;
+	margin: 5px 5px 15px 5px;
+	font-size: 1.2em;
+}
+
+aside h2 {
+	text-align: left;
+	margin: 5px;
+	font-size: 1em;
+}
+
+aside ul {
+	list-style-type: circle;
+}
+
+aside li {
+	font-size: 0.8em;
+	line-height: 1.8em;
+	margin-right: 10px;
+}
+
+aside p {
+	margin: 15px;
+	font-size: 0.8em;
+}
+
+
+/* Footer Styles */
+
+footer {
+	background-color: hsl(291,5%,29%);
+	color: ivory;
+	text-align: center;
+	font-size: 0.8em;
+	font-variant:small-caps;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+/* Blockquote styles */
+blockquote {
+	margin-top: 80px;
+	margin-left: 0;
+	margin-right: 10px;
+	margin-bottom: 40px;
+	font-size: 1.2em;
+	color: hsl(282,48%,44%);
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	quotes: "\201C" "\201D" "\2018" "\2019" ;
+}
+
+blockquote::before {
+	content: open-quote;
+	font-size: 1.6em;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+blockquote::after {
+	content: close-quote;
+	font-size: 1.6em;
+	font-weight: bold;
+	font-family: 'Times New Roman', Times, serif;
+}

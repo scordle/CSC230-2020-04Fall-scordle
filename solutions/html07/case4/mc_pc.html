@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Case Problem 4
+
+      Millennium Computers Order Form
+      Author: Sandy Walton
+      Date:   2018-03-01
+
+      Filename:   mc_pc.html
+
+   -->
+   
+   <meta charset="utf-8" />
+      <meta charset="UTF-8" />
+      <title>Computer Order Form</title>
+      <link href="mc_styles.css" rel="stylesheet" />
+      <link href="mc_forms.css" rel="stylesheet" />
+      <script src="mc_script.js"></script>      
+   </head>
+
+
+   <body>
+      <header>
+         <img src="mc_logo.png" alt="Millennium Computers" />
+      </header>
+
+
+      <nav>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Desktops</a></li>
+            <li><a href="#">Laptops</a></li>
+            <li><a href="#">Peripherals</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Your Account</a></li>
+            <li><a href="#">Shopping Cart</a></li>
+            <li><a href="#">Contact Us</a></li>
+         </ul>
+      </hav>
+
+
+      <section id="pageContent">
+  
+         <h1>Build Your Computer</h1>
+         <p>* - required information</p>
+   
+         <form id="cForm" name="cForm"
+               action="http://www.mill_computers.com/orders/process.cgi"
+               method="post">
+
+           <fieldset id="contactInfo">
+              <legend>Contact Information</legend>
+
+              <label class="blockLab">
+                 First Name *
+                 <input type="text" name="fName" id="fName" size="20" required />
+              </label>
+              <label class="blockLab">
+                 Last Name *
+                 <input type="text" name="lName" id="lName" size="20" required />
+              </label>
+              <label class="blockLab">
+                 Street *
+                 <input type="text" name="street" id="street" size="20" required />
+              </label>
+              <label class="blockLab">
+                 City *
+                 <input type="text" name="city" id="city" size="15" required />
+              </label>
+              <label class="blockLab">
+                 State *
+                 <input type="text" name="state" id="state" size="5" required />
+              </label>
+              <label class="blockLab">
+                 ZIP *
+                 <input type="text" name="zip" id="zip" size="8"
+                  required pattern="^\d{5}(\-\d{4})?$" />
+              </label>
+              <label class="blockLab">
+                 Phone *
+                 <input type="text" name="phone" id="phone" size="15"
+                  required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+              </label>
+           </fieldset>
+
+           <fieldset id="computer">
+              <legend>Computer Configuration</legend>
+
+              <label class="blockLab">
+                 Processor Speed
+                 <select id="pSpeed" name="pSpeed">
+                    <option>3.2 GHz</option>
+                    <option>4.0 GHz</option>
+                    <option>5.2 GHz</option>
+                 </select>
+              </label>
+              <label class="blockLab">
+                 Memory
+                 <select id="mem" name="mem">
+                    <option>1 GB</option>
+                    <option>2 GB</option>
+                    <option>4 GB</option>
+                    <option>8 GB</option>
+                 </select>
+              </label>
+              <label class="blockLab">
+                 Monitor Size
+                 <select id="monitor" name="monitor">
+                    <option>15"</option>
+                    <option>17"</option>
+                    <option>19"</option>
+                    <option>21"</option>
+                 </select>
+              </label>
+              <label class="blockLab">
+                 Hard Drive
+                  <select id="hd" name="hd">
+                    <option>240 GB</option>
+                    <option>500 GB</option>
+                    <option>750 GB</option>
+                    <option>1 TB</option>
+                 </select>
+              </label>
+              <label class="blockLab">
+                 DVD Burner
+                 <span>
+                    <input type="radio" name="dvd" id="dvdyes" />
+                    <label for="dvdyes">Yes</label>
+                    <input type="radio" name="dvd" id="dvdno" />
+                    <label for="dvdno">No</label>
+                 </span>
+              </label>
+              <label class="blockLab">
+                 Tuner Card
+                 <span>
+                    <input type="radio" name="tuner" id="tuneryes" />
+                    <label for="tuneryes">Yes</label>
+                    <input type="radio" name="tuner" id="tunerno" />
+                    <label for="tunerno">No</label>
+                 </span>
+              </label>
+              <label class="blockLab">
+                 Media Card Reader
+                 <span>
+                    <input type="radio" name="mcard" id="mcardyes" />
+                    <label for="mcardyes">Yes</label>
+                    <input type="radio" name="mcard" id="mcardno" />
+                    <label for="mcardno">No</label>
+                 </span>
+              </label>
+           </fieldset>
+
+           <label class="newline">
+              <input type="checkbox" id="warranty" name="warranty" />
+              Yes, I want the 24-month extended warranty.
+           </label>
+           <label class="newline">
+              <br />Any special requests on your order?<br />
+              <textarea id="comments" name="comments" rows="10" cols="50"></textarea>
+           <label>
+           <br /><br />
+           <input type="submit" value="Send Order" />
+           <input type="reset" value="Cancel Order" />
+           <input type="button" value="Contact Me" />
+
+         </form>
+
+
+         <footer>
+            Millennium Computer &bull;
+            100 Commerce Drive &bull;
+            Madison, WI 53597 &bull;
+            (608) 555 - 8441
+         </footer>
+ 
+      </section>
+
+   </body>
+
+</html>
