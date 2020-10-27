@@ -20,6 +20,13 @@ html {
 
 body {
    background-color: rgb(227, 210, 173);
+   font-family: 'Century Gothic', sans-serif;
+}
+
+footer {
+   background-color: rgb(208, 184, 109);
+   padding-top: 5px;
+   padding-bottom: 5px;
 }
 
 
