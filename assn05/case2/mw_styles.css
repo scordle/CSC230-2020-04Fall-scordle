@@ -20,8 +20,22 @@ html {
 
 body {
    background-color: rgb(227, 210, 173);
+   font-family: 'Century Gothic', sans-serif;
 }
 
+footer {
+   background-color: rgb(208, 184, 109);
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+footer address {
+	font-style: normal;
+	text-align: center;
+	font-size: 0.9em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 /* Heading Styles */
 
