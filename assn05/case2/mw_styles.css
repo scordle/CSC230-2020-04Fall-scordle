@@ -12,59 +12,66 @@
 
 */
 
-
 /* Structural Styles */
 html {
-   background-color: rgb(173, 189, 227);
+  background-color: rgb(173, 189, 227);
 }
 
 body {
-   background-color: rgb(227, 210, 173);
-   font-family: 'Century Gothic', sans-serif;
+  background-color: rgb(227, 210, 173);
+  font-family: "Century Gothic", sans-serif;
 }
 
 footer {
-   background-color: rgb(208, 184, 109);
-   padding-top: 5px;
-   padding-bottom: 5px;
+  background-color: rgb(208, 184, 109);
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 footer address {
-	font-style: normal;
-	text-align: center;
-	font-size: 0.9em;
-	padding-top: 10px;
-	padding-bottom: 10px;
+  font-style: normal;
+  text-align: center;
+  font-size: 0.9em;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Heading Styles */
-h1, h2 {
-	font-weight: normal;
+h1,
+h2 {
+  font-weight: normal;
 }
 
 /* Navigation Styles */
 nav > ul {
-	list-style-type: none;
-	line-height: 2em;
-	font-size: 0.9em;
+  list-style-type: none;
+  line-height: 2em;
+  font-size: 0.9em;
 }
 
 nav a:visited, a:link {
-   text-decoration: none;
-   color: rgb(43, 59, 125);
+  text-decoration: none;
+  color: rgb(43, 59, 125);
 }
 
 nav a:hover, a:active {
-   color: rgb(212, 35, 35);
+  color: rgb(212, 35, 35);
 }
 /* Article Styles */
+article#tour_summary h1 {
+  font-size: 2.2em;
+  letter-spacing: 0.2em;
+}
 
+article#tour_summary p {
+  font-size: 1.1em;
+}
 
-
+article#tour_summary > p:first-of-type::first-line {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
 
 /* Aside Styles */
 
-
-
 /* Blockquote Styles */
-
