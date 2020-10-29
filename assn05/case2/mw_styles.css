@@ -58,10 +58,20 @@ nav a:hover, nav a:active {
    color: rgb(212, 35, 35);
 }
 
-
-
 /* Article Styles */
+article#tour_summary h1 {
+   font-size: 2.2em;
+   letter-spacing: 0.23m;
+}
 
+article#tour_summary p {
+   font-size: 1.13m;
+}
+
+article#tour_summary > p:first-of-type::first-line {
+   font-variant: small-caps;
+   font-size: 1.2em;
+}
 
 
 
