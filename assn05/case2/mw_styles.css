@@ -54,6 +54,10 @@ nav a:visited, nav a:link {
    color: rgb(13, 59, 125);
 }
 
+nav a:hover, nav a:active {
+   color: rgb(212, 35, 35);
+}
+
 
 
 /* Article Styles */
