@@ -1,0 +1,78 @@
+/*
+    Sytlesheet for CSC230 Website Design Final Exam
+    Author: Scott Cordle
+    Date:   12/15/2020
+
+    Filename: finalExam.css
+    Required files:  
+*/
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 16pt;
+    width: 85%;
+    margin: auto;
+    background-color: darkslategray;
+  }
+  
+  header h1 {
+    font-size: 36pt;
+    margin: 35px 0px 0px 0px;
+    padding: 15px 0px 0px 15px;
+    background-color: lavender; /* same background-color as header h3 */
+  }
+  
+  header h3 {
+    font-size: 24pt;
+    margin: 0px;
+    padding: 15px 0px 0px 15px;
+    background-color: lavender; /* same background-color as header h3 */
+  }
+  
+  h1 {
+    font-family: Arial;
+    font-size: 22pt;
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 15px 0px 0px 15px;
+    background-color: slategray;
+  }
+  
+  h3 {
+    font-family: Arial;
+    text-align: left;
+    background-color: dimgray;
+  }
+  
+  p {
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #06e;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    margin-left: 30px;
+  } /* cellspacing="0" */
+  
+  th,
+  td {
+    padding: 2px 5px;
+  }
+  
+  header img {
+    text-align: right;
+  }
+  
+  /*still need definitions for <header>, <nav>, <section>, <footer> */
