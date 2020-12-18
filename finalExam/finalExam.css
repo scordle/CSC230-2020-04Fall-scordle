@@ -16,6 +16,11 @@ body {
   background-color: darkslategray;
 }
 
+header {
+  background-color: lavender; /* same background-color as header h3 */
+  height: 300px;
+}
+
 header h1 {
   font-size: 36pt;
   margin: 35px 0px 0px 0px;
@@ -28,6 +33,18 @@ header h3 {
   margin: 0px;
   padding: 15px 0px 0px 15px;
   background-color: lavender; /* same background-color as header h3 */
+}
+
+header img {
+  clear: both;
+  display: block;
+  float: right;
+}
+
+header p {
+  margin: 0px;
+  padding: 15px 0px 0px 15px;
+
 }
 
 h1 {
@@ -43,7 +60,7 @@ h1 {
 h3 {
   font-family: Arial;
   text-align: left;
-  background-color: dimgray;
+  background-color: lavender; 
 }
 
 p {
